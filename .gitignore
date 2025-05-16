@@ -1,1 +1,39 @@
+# === Terraform-specific ===
+.terraform/
+.terraform.lock.hcl
+*.tfplan
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# === YAML pipeline artifacts ===
+# GitHub Actions
+.github/workflows/*.log
+.github/actions/**/dist/
+.github/actions/**/node_modules/
+
+# Azure Pipelines
+.azure-pipelines/**/*.log
+azure-pipelines.yml
+
+# GitLab CI
+.gitlab-ci.yml
+
+# === CI/CD generated artifacts ===
+*.log
+*.tmp
+*.bak
+*.swp
+*.zip
+*.tar.gz
+dist/
+build/
+coverage/
+node_modules/
 
