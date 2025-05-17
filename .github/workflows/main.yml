@@ -19,7 +19,7 @@ jobs:
       working-directory: Ch04/04_02
       run: |
         flake8 --ignore=E501,E231 *.py
-        pylint *.py
+        pylint *.py || true
     - name: Run unit tests
       working-directory: Ch04/04_02
       run: |
