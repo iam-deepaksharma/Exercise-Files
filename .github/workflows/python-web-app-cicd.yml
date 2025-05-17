@@ -1,4 +1,4 @@
-name: Pipeline
+name: Python Pipeline
 
 on: [push]
 env:
@@ -7,7 +7,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Setup Python environment
       uses: actions/setup-python@v3.1.0
     - name: Install requirements
