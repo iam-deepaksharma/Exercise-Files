@@ -13,7 +13,7 @@ jobs:
     - name: List files in repo
       run: ls -la
     - name: Install requirements
-      working-directory: Exercise_Files/Ch04/04_02
+      working-directory: Ch04/04_02
       run: pip install --quiet --requirement requirements.txt
     - name: Lint code
       run: |
